@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="personal_category"
+        android:title="Personal Informations">
+
+        <EditTextPreference
+            android:dialogMessage="Enter Message"
+            android:dialogTitle="Message Content"
+            android:inputType="textCapWords"
+            android:key="message_body"
+            android:summary="Enter Message"
+            android:title="Message Content" />
+
+        <EditTextPreference
+            android:dialogMessage="Enter Your Email Id"
+            android:dialogTitle="Email Id"
+            android:inputType="textCapWords"
+            android:key="email"
+            android:summary="Enter Email Id"
+            android:title="Email Id" />
+
+        <EditTextPreference
+            android:dialogMessage="Enter Password"
+            android:dialogTitle="Password"
+            android:inputType="textPassword"
+            android:key="email_pass"
+            android:summary="Enter Email Password"
+            android:title="Password" />
+
+        <EditTextPreference
+            android:dialogMessage="Enter Email Subject"
+            android:dialogTitle="Email Subject"
+            android:inputType="text"
+            android:key="email_sub"
+            android:summary="Enter Email Subject"
+            android:title="Email Subject"/>
+
+        <EditTextPreference
+            android:dialogMessage="Enter Email Content"
+            android:dialogTitle="Email Content"
+            android:inputType="textCapWords"
+            android:key="email_body"
+            android:summary="Enter Email content"
+            android:title="Email Content" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

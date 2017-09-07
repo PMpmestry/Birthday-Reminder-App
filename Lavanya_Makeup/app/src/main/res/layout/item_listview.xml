@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myselector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/item_layout">
+
+    <TextView
+        android:id="@+id/TV_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Customer Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No. :"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/TV_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/TV_MobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8108300764"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/Mobile"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_alignBottom="@+id/Mobile" />
+
+    <TextView
+        android:id="@+id/LandLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel No. :"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/TV_MobileNo"
+        android:layout_alignBottom="@+id/TV_MobileNo"
+        android:layout_toRightOf="@+id/TV_MobileNo"
+        android:layout_toEndOf="@+id/TV_MobileNo"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/TV_Lln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28186968"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/LandLine"
+        android:layout_alignBottom="@+id/LandLine"
+        android:layout_toRightOf="@+id/LandLine"
+        android:layout_toEndOf="@+id/LandLine"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Mobile"
+        android:text="DOB. :"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TV_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/12/1995"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Mobile"
+        android:layout_toRightOf="@+id/DOB"
+        android:layout_toEndOf="@+id/DOB" />
+
+    <TextView
+        android:id="@+id/DOA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOA. :"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/LandLine"
+        android:layout_toRightOf="@+id/TV_MobileNo"
+        android:layout_toEndOf="@+id/TV_MobileNo"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/TV_DOA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13/12/1995"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_alignBaseline="@+id/DOA"
+        android:layout_alignBottom="@+id/DOA"
+        android:layout_toRightOf="@+id/DOA"
+        android:layout_toEndOf="@+id/DOA" />
+
+    <TextView
+        android:id="@+id/EmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID. :"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/TV_EmailId" />
+
+    <TextView
+        android:id="@+id/TV_EmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pmestry.pm@gmail.com"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/TV_DOB"
+        android:layout_toRightOf="@+id/EmailId"
+        android:layout_toEndOf="@+id/EmailId"
+        android:layout_marginLeft="3dp"/>
+
+    <!--<Button
+        android:id="@+id/btn_mail"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:text="Send Mail"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/doa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_msg"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:text="Send SMS"
+        android:textSize="10sp"
+
+        android:layout_alignBottom="@+id/mobile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>
